@@ -9,7 +9,8 @@ const nextConfig = {
     config.resolve.alias['~'] = resolve(__dirname, 'src')
     return config
   },
-  trailingSlash: true
+  trailingSlash: true,
+  target: 'serverless'
 }
 
 module.exports = nextConfig
