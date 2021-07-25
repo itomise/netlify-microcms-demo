@@ -3,6 +3,7 @@ import { Blogs } from '~/interfaces'
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Props {
   blogs: Array<Blogs>
@@ -28,6 +29,9 @@ const BlogHome: NextPage<Props> = ({ blogs }) => (
           </Link>
         </div>
       ))}
+      <div className="image">
+        <Image src="/sample01.jpg" alt="" width={1920} height={1080} />
+      </div>
     </div>
   </>
 )
